@@ -1,3 +1,7 @@
+/*
+Lessons on Booleans and Conditionals
+*/
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,16 +22,12 @@
     <?php
 
         $name = "Dark Matter";
-        $read = false;
+    $read = false;
 
     if ($read == true) {
-
         $message = "You have read $name";
-
     } else {
-
         $message = "You have NOT read $name";
-
     }
 
     ?>
