@@ -1,7 +1,3 @@
-/*
-Lessons on Booleans and Conditionals
-*/
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,23 +14,27 @@ Lessons on Booleans and Conditionals
     </style>
 </head>
 <body>
-
-    <?php
-
-        $name = "Dark Matter";
-    $read = false;
-
-    if ($read == true) {
-        $message = "You have read $name";
-    } else {
-        $message = "You have NOT read $name";
-    }
-
-    ?>
+    Lessons on Arrays
 
     <h1>
-        <?php echo $message; ?>
+        Recommended Books
     </h1>
+
+    <?php
+        $books = [
+            "Do Androids Dream of Electric Sheep?",
+            "The Langoliers",
+            "Hail Mary",
+            "Animal Farm"
+        ];
+    ?>
+
+    <ul>
+        <?php foreach ($books as $book) {
+            echo "<li>{$book}™</li>";
+        }
+    ?>
+    </ul>
 
 
 
