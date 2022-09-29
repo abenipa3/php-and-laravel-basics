@@ -28,13 +28,7 @@
 
     <ul>
         <li>
-            <a href="http://localhost:8888/firstPhpTag.php">First PHP Tag</a>
-        </li>
-        <li>
-            <a href="http://localhost:8888/variables.php">Variables</a>
-        </li>
-        <li>
-            <a href="http://localhost:8888/associateArrays.php">Associate Arrays</a>
+            Test
         </li>
     </ul>
 
@@ -42,20 +36,6 @@
         Recommended Books
     </h3>
 
-    <?php
-        $books = [
-            [
-                "name" => "Do Androids Dream of Electric Sheep?",
-                "author" => "Philip K. Dick",
-                "purchaseUrl" => "https://www.google.com"
-            ],
-            [
-                "name" => "Project Hail Mary",
-                "author" => "Andy Weir",
-                "purchaseUrl" => "https://www.google.com"
-            ]
-        ];
-    ?>
 
 <ul>
     <?php foreach ($books as $book) : ?>
