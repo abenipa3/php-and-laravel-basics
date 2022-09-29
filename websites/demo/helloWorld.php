@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homework: Variables</title>
+    <title><strikethrough>Homework:</strikethrough> Conditions and Booleans Practice</title>
     <style>
         body {
             display:grid;
@@ -18,29 +18,24 @@
     </style>
 </head>
 <body>
-    <h1>
-        <?php
-        $greeting = "Howdy";
-        $noun = "Everybody";
-        // Single quotes reads variable as a string.
-        // Double quotes reads the variables as a variable.
-        echo "$greeting $noun ✨"
-        ?>
-    </h1>
-    <?php
-    echo "<center><img src='https://i.kym-cdn.com/entries/icons/original/000/034/388/tempsnip4.png'></center>";
+
+<h1>
+    <?= "Hello World" ?>
+</h1>
+
+<?php
+    echo "<center><img src='https://i.kym-cdn.com/photos/images/newsfeed/002/205/307/1f7.jpg'></center>";
     ?>
 
-    <p>
-        <?php
-        echo "Assignment (Completed): Create a variable for noun called \"World\". <br> Then play around with changing the variable values to generate different sentences."
-        ?>
+<p>
+    <?php
+    echo "Assignment (Completed): Use a PHP short echo tag to display the string, \"Hello World\" on the page."
+    ?>
     </p>
 
+<h2>Navigation</h2>
 
-    <h2>Navigation</h2>
-
-    <?php
+<?php
         $navigation = [
             [
                 "name" => "Home",

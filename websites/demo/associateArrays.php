@@ -65,6 +65,14 @@
             "navigationUrl" => "http://localhost:8888/variables.php"
         ],
         [
+            "name" => "Conditions and Booleans",
+            "assignmentUrl" => "http://localhost:8888/conditionsAndBooleans.php"
+        ],
+        [
+            "name" => "Hello World",
+            "navigationUrl" => "http://localhost:8888/helloWorld.php"
+        ],
+        [
             "name" => "Associate Arrays",
             "navigationUrl" => "http://localhost:8888/associateArrays.php"
         ]
