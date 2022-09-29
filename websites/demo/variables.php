@@ -20,8 +20,8 @@
 <body>
     <h1>
         <?php
-        $greeting = "What's up,";
-        $noun = "World";
+        $greeting = "Howdy";
+        $noun = "Everybody";
         // Single quotes reads variable as a string.
         // Double quotes reads the variables as a variable.
         echo "$greeting $noun ✨"
@@ -33,9 +33,42 @@
 
     <p>
         <?php
-        echo "Assignment: Create a variable for noun called \"World\". Then play around with changing the variable values to generate different sentences."
+        echo "Assignment (Completed): Create a variable for noun called \"World\". <br> Then play around with changing the variable values to generate different sentences."
         ?>
     </p>
+
+
+    <h2>Navigation</h2>
+
+    <?php
+        $navigation = [
+            [
+                "name" => "Home",
+                "navigationUrl" => "/"
+            ],
+            [
+                "name" => "First PHP Tag",
+                "navigationUrl" => "http://localhost:8888/firstPhpTag.php"
+            ],
+            [
+                "name" => "Variables",
+                "navigationUrl" => "http://localhost:8888/variables.php"
+            ],
+            [
+                "name" => "Associate Arrays",
+                "navigationUrl" => "http://localhost:8888/associateArrays.php"
+            ]
+        ];
+    ?>
+    <ul>
+        <?php foreach ($navigation as $navigation) : ?>
+            <li>
+                <a href=" <?= $navigation ['navigationUrl']; ?>">
+                <?= $navigation["name"]; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 
 </body>
 </html>

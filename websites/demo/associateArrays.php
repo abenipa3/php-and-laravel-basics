@@ -48,5 +48,37 @@
         <?php endforeach; ?>
 </ul>
 
+<h2>Navigation</h2>
+
+<?php
+    $navigation = [
+        [
+            "name" => "Home",
+            "navigationUrl" => "/"
+        ],
+        [
+            "name" => "First PHP Tag",
+            "navigationUrl" => "http://localhost:8888/firstPhpTag.php"
+        ],
+        [
+            "name" => "Variables",
+            "navigationUrl" => "http://localhost:8888/variables.php"
+        ],
+        [
+            "name" => "Associate Arrays",
+            "navigationUrl" => "http://localhost:8888/associateArrays.php"
+        ]
+    ];
+?>
+<ul>
+    <?php foreach ($navigation as $navigation) : ?>
+        <li>
+            <a href=" <?= $navigation ['navigationUrl']; ?>">
+            <?= $navigation["name"]; ?>
+            </a>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
 </body>
 </html>
