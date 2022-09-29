@@ -94,6 +94,10 @@
     <?php
         $assignments = [
             [
+                "name" => "Home",
+                "assignmentUrl" => "/"
+            ],
+            [
                 "name" => "First PHP Tag",
                 "assignmentUrl" => "http://localhost:8888/firstPhpTag.php"
             ],
@@ -107,7 +111,11 @@
             ],
             [
                 "name" => "Hello World",
-                "navigationUrl" => "http://localhost:8888/helloWorld.php"
+                "assignmentUrl" => "http://localhost:8888/helloWorld.php"
+            ],
+            [
+                "name" => "Arrays",
+                "assignmentUrl" => "http://localhost:8888/arrays.php"
             ],
             [
                 "name" => "Associate Arrays",

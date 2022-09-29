@@ -11,42 +11,68 @@
             margin:0;
             font-family: sans-serif;
         }
+        img {
+            width: 400px;
+        }
     </style>
 </head>
 <body>
-
-    <h1>
-        Laracasts Lessons: Demo Workspace
-    </h1>
-
-    <p>
-        This is page is currently a workspace for current lessons via Laracasts.
-    </p>
-    <p>
-        View past assignments in the following links:
-    </p>
-
-    <ul>
-        <li>
-            Test
-        </li>
-    </ul>
 
     <h3>
         Recommended Books
     </h3>
 
-
-<ul>
-    <?php foreach ($books as $book) : ?>
+    <?php
+        $books = [
+            [
+                "name" => "Do Androids Dream of Electric Sheep?",
+                "author" => "Philip K. Dick",
+                "purchaseUrl" => "https://www.google.com",
+                "releasedYear" => 1968,
+            ],
+            [
+                "name" => "Project Hail Mary",
+                "author" => "Andy Weir",
+                "purchaseUrl" => "https://www.google.com",
+                "releasedYear" => 2021,
+            ],
+            [
+                "name" => "Pet Sematary",
+                "author" => "Stephen King",
+                "purchaseUrl" => "https://www.google.com",
+                "releasedYear" => 1983,
+            ],
+            [
+                "name" => "The Truth About Keeping Secrets",
+                "author" => "Savannah Brown",
+                "purchaseUrl" => "https://www.google.com",
+                "releasedYear" => 2019,
+            ],
+            [
+                "name" => "To Kill a Mockingbird",
+                "author" => "Harper Lee",
+                "purchaseUrl" => "https://www.google.com",
+                "releasedYear" => 1960,
+            ]
+        ];
+    ?>
+    <ul>
+        <?php foreach ($books as $book) : ?>
     <li>
         <a href=" <?= $book ['purchaseUrl']; ?>">
             <?= $book["name"]; ?>
         </a>
+        <p>
+            <?= $book["releasedYear"]; ?>
+        </p>
     </li>
 
         <?php endforeach; ?>
-</ul>
+    </ul>
+
+    <?php
+    echo "<center><img src='https://i.pinimg.com/736x/b2/39/17/b239173feb16bb689c990914d628fbde.jpg'></center>";
+    ?>
 
 <h2>Navigation</h2>
 
@@ -66,11 +92,15 @@
         ],
         [
             "name" => "Conditions and Booleans",
-            "assignmentUrl" => "http://localhost:8888/conditionsAndBooleans.php"
+            "navigationUrl" => "http://localhost:8888/conditionsAndBooleans.php"
         ],
         [
             "name" => "Hello World",
             "navigationUrl" => "http://localhost:8888/helloWorld.php"
+        ],
+        [
+            "name" => "Arrays",
+            "navigationUrl" => "http://localhost:8888/arrays.php"
         ],
         [
             "name" => "Associate Arrays",

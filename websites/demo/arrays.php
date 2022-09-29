@@ -19,24 +19,34 @@
 </head>
 <body>
     <h1>
-        <?php
-        echo "Hello World";
-        ?>
+        Top Performing Users
     </h1>
+
+    <?php
+        $users = [
+            "tacocat",
+            "hobbits2isengard",
+            "buckybarnes",
+            "AReallyCoolUsername"
+        ];
+    ?>
+
+    <ol>
+        <?php foreach ($users as $user): ?>
+            <li><?= $user ?></li>
+        <?php endforeach; ?>
+    </ol>
+
+
     <p>
     <?php
-    echo "Laracast is pretty cool.";
+    echo "<center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZsopef1dI5sLRvRMRZdr8NivjkZeshcLX7sCzs3jxlq0tcu-R'></center>";
     ?>
     </p>
-    <p>
-    <?php
-    echo "I'm going to take a nap now. Bye!<br>";
-    echo "<center><img src='https://64.media.tumblr.com/e94f30d90d00cb32a34c74190771e3ea/be155eb700bcb5a9-37/s1280x1920/01c1a5a37040561affca420f51fc11291971088d.jpg'></center>";
-    ?>
-    </p>
+
     <p>
         <?php
-        echo "Assignment (Completed): Create a paragraph that uses PHP to `echo` any basic sentence of your choosing. <br> Practice typing the opening and closing `php` tags "
+        echo "Assignment (Completed): Create an array of any three usernames - perhaps for a \"Top Performing Users\" section of your website. <br> Then, create a loop that displays each username within a list item."
         ?>
     </p>
 
@@ -58,7 +68,7 @@
         ],
         [
             "name" => "Conditions and Booleans",
-            "assignmentUrl" => "http://localhost:8888/conditionsAndBooleans.php"
+            "navigationUrl" => "http://localhost:8888/conditionsAndBooleans.php"
         ],
         [
             "name" => "Hello World",
