@@ -42,43 +42,8 @@
 </head>
 <body>
 
-    <h1>
-        Laracasts Lessons: Demo Workspace
-    </h1>
-
-    <p>
-        This is page is currently a workspace for current lessons via Laracasts.
-    </p>
-
-    <h3>
-        Recommended Books
-    </h3>
-
-    <?php
-        $books = [
-            [
-                "name" => "Do Androids Dream of Electric Sheep?",
-                "author" => "Philip K. Dick",
-                "purchaseUrl" => "https://www.google.com"
-            ],
-            [
-                "name" => "Project Hail Mary",
-                "author" => "Andy Weir",
-                "purchaseUrl" => "https://www.google.com"
-            ]
-        ];
-    ?>
-    <ul>
-        <?php foreach ($books as $book) : ?>
-    <li>
-        <a href=" <?= $book ['purchaseUrl']; ?>">
-            <?= $book["name"]; ?>
-        </a>
-    </li>
-
-        <?php endforeach; ?>
-    </ul>
-
+<h1>New Lesson?</h1>
+<h2>Navigate to the <a href="http://localhost:8888/demoWorkspace.php">Workspace</a>.</h2>
 
     <!--Navigation-->
 

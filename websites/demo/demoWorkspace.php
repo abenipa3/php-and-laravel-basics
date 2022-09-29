@@ -11,12 +11,46 @@
             margin:0;
             font-family: sans-serif;
         }
+
         img {
             width: 400px;
         }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        div.tooltip span {
+            display: none;
+            position: absolute;
+            bottom: 50%;
+            left: 35%;
+            right: 0;
+            background: #333;
+            color: #fff;
+            width: 150px;
+            z-index: 30;
+            text-align: center;
+        }
+
+        div.tooltip:hover span {
+            display:block;
+        }
+
     </style>
 </head>
 <body>
+    <h1>
+        Demo Workspace
+    </h1>
+    <h2>
+        Today's Laracasts Lesson: Functions and Filters
+    </h2>
+
+    <p>
+        This is page is currently a workspace for current lessons via Laracasts.
+    </p>
 
     <h3>
         Recommended Books
@@ -54,66 +88,36 @@
                 "releaseYear" => 1960,
                 "purchaseUrl" => "https://www.google.com",
             ],
+            [
+                "name" => "The Martian",
+                "author" => "Andy Weir",
+                "releaseYear" => 2011,
+                "purchaseUrl" => "https://www.google.com",
+            ]
         ];
+
+    function filterByAuthor($books)
+    {
+        return "gibberish";
+    }
+
     ?>
+
     <ul>
         <?php foreach ($books as $book) : ?>
-    <li>
-        <a href=" <?= $book ['purchaseUrl']; ?>">
-            <?= $book["name"]; ?> (<?= $book["releaseYear"]; ?>)
-        </a>
-    </li>
-
-        <?php endforeach; ?>
+            <?php if ($book['author'] === 'Andy Weir') : ?>
+                <li>
+                    <a href=" <?= $book ['purchaseUrl']; ?>">
+                    <?= $book["name"]; ?> (<?= $book["releaseYear"]; ?>) by <?= $book["author"]; ?>
+                </a>
+            </li>
+    <?php endif; ?>
+    <?php endforeach; ?>
     </ul>
 
-    <?php
-    echo "<center><img src='https://i.pinimg.com/736x/b2/39/17/b239173feb16bb689c990914d628fbde.jpg'></center>";
-    ?>
-
-<h2>Navigation</h2>
-
-<?php
-    $navigation = [
-        [
-            "name" => "Home",
-            "navigationUrl" => "/"
-        ],
-        [
-            "name" => "First PHP Tag",
-            "navigationUrl" => "http://localhost:8888/firstPhpTag.php"
-        ],
-        [
-            "name" => "Variables",
-            "navigationUrl" => "http://localhost:8888/variables.php"
-        ],
-        [
-            "name" => "Conditions and Booleans",
-            "navigationUrl" => "http://localhost:8888/conditionsAndBooleans.php"
-        ],
-        [
-            "name" => "Hello World",
-            "navigationUrl" => "http://localhost:8888/helloWorld.php"
-        ],
-        [
-            "name" => "Arrays",
-            "navigationUrl" => "http://localhost:8888/arrays.php"
-        ],
-        [
-            "name" => "Associate Arrays",
-            "navigationUrl" => "http://localhost:8888/associateArrays.php"
-        ]
-    ];
-    ?>
-<ul>
-    <?php foreach ($navigation as $navigation) : ?>
-        <li>
-            <a href=" <?= $navigation ['navigationUrl']; ?>">
-            <?= $navigation["name"]; ?>
-            </a>
-        </li>
-    <?php endforeach; ?>
-</ul>
+    <p>
+        <?= filterByAuthor($books); ?>
+    </p>
 
 </body>
 </html>
