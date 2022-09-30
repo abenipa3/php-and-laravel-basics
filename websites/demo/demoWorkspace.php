@@ -111,14 +111,12 @@
     ?>
 
     <ul>
-        <?php foreach (filterByAuthor($books, "Andy Weir") as $book) : ?>
-            <?php if ($book['author'] === 'Andy Weir') : ?>
+        <?php foreach (filterByAuthor($books, "Philip K. Dick") as $book) : ?>
                 <li>
                     <a href=" <?= $book ['purchaseUrl']; ?>">
                     <?= $book["name"]; ?> (<?= $book["releaseYear"]; ?>) by <?= $book["author"]; ?>
                 </a>
             </li>
-    <?php endif; ?>
     <?php endforeach; ?>
     </ul>
 
