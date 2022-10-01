@@ -85,6 +85,10 @@
             [
                 "name" => "Associate Arrays",
                 "assignmentUrl" => "http://localhost:8888/associateArrays.php"
+            ],
+            [
+                "name" => "Functions and Filters",
+                "assignmentUrl" => "http://localhost:8888/functionsAndFilters.php"
             ]
         ];
     ?>

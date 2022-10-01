@@ -53,68 +53,60 @@
     </p>
 
     <h3>
-        Recommended Books
+        Favorite Movies
     </h3>
 
     <?php
-        $books = [
+        $movies = [
             [
-                "name" => "Do Androids Dream of Electric Sheep?",
-                "author" => "Philip K. Dick",
-                "releaseYear" => 1968,
-                "purchaseUrl" => "https://www.google.com",
+                "name" => "War of the Worlds",
+                "releaseYear" => 2005,
             ],
             [
-                "name" => "Project Hail Mary",
-                "author" => "Andy Weir",
-                "releaseYear" => 2021,
-                "purchaseUrl" => "https://www.google.com",
+                "name" => "The Crow",
+                "releaseYear" => 1994,
             ],
             [
-                "name" => "Pet Sematary",
-                "author" => "Stephen King",
-                "releaseYear" => 1983,
-                "purchaseUrl" => "https://www.google.com",
+                "name" => "The Mist",
+                "releaseYear" => 2007,
             ],
             [
-                "name" => "The Truth About Keeping Secrets",
-                "author" => "Savannah Brown",
+                "name" => "Knives Out",
                 "releaseYear" => 2019,
-                "purchaseUrl" => "https://www.google.com",
             ],
             [
-                "name" => "To Kill a Mockingbird",
-                "author" => "Harper Lee",
-                "releaseYear" => 1960,
-                "purchaseUrl" => "https://www.google.com",
+                "name" => "The Lord of the Rings: The Fellowship of the Ring",
+                "releaseYear" => 2001,
             ],
             [
-                "name" => "The Martian",
-                "author" => "Andy Weir",
-                "releaseYear" => 2011,
-                "purchaseUrl" => "https://www.google.com",
-            ]
+                "name" => "The Lord of the Rings: The Two Towers",
+                "releaseYear" => 2002,
+            ],
+            [
+                "name" => "The Lord of the Rings: The Return of the King",
+                "releaseYear" => 2003,
+            ],
         ];
 
-    function filterByAuthor($books, $author)
+    function filterByReleased($movies)
     {
-        $filteredBooks = [];
-        foreach ($books as $book) {
-            if ($book['author'] === $author){
-                $filteredBooks[] = $book;
+        $filteredMovies = [];
+
+        foreach ($movies as $movie) {
+            if ($movie['releaseYear'] >= 2000) {
+                $filteredMovies[] = $movie;
             }
         }
 
-        return $filteredBooks;
+        return $filteredMovies;
     }
 
     ?>
 
     <ul>
-        <?php foreach (filterByAuthor($books, "Philip K. Dick") as $book) : ?>
+        <?php foreach (filterByReleased($movies) as $movie) : ?>
                 <li>
-                    <a href=" <?= $book ['purchaseUrl']; ?>">
-                    <?= $book["name"]; ?> (<?= $book["releaseYear"]; ?>) by <?= $book["author"]; ?>
+                    <?= $movie["name"]; ?>
                 </a>
             </li>
     <?php endforeach; ?>

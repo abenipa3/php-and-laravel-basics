@@ -71,49 +71,11 @@
     echo "<center><img src='https://i.pinimg.com/736x/b2/39/17/b239173feb16bb689c990914d628fbde.jpg'></center>";
     ?>
 
-<h2>Navigation</h2>
+    <!--Return Home-->
 
-<?php
-    $navigation = [
-        [
-            "name" => "Home",
-            "navigationUrl" => "/"
-        ],
-        [
-            "name" => "First PHP Tag",
-            "navigationUrl" => "http://localhost:8888/firstPhpTag.php"
-        ],
-        [
-            "name" => "Variables",
-            "navigationUrl" => "http://localhost:8888/variables.php"
-        ],
-        [
-            "name" => "Conditions and Booleans",
-            "navigationUrl" => "http://localhost:8888/conditionsAndBooleans.php"
-        ],
-        [
-            "name" => "Hello World",
-            "navigationUrl" => "http://localhost:8888/helloWorld.php"
-        ],
-        [
-            "name" => "Arrays",
-            "navigationUrl" => "http://localhost:8888/arrays.php"
-        ],
-        [
-            "name" => "Associate Arrays",
-            "navigationUrl" => "http://localhost:8888/associateArrays.php"
-        ]
-    ];
-    ?>
-<ul>
-    <?php foreach ($navigation as $navigation) : ?>
-        <li>
-            <a href=" <?= $navigation ['navigationUrl']; ?>">
-            <?= $navigation["name"]; ?>
-            </a>
-        </li>
-    <?php endforeach; ?>
-</ul>
+    <a href="http://localhost:8888" style="text-decoration: none">← back</a>
+
+
 
 </body>
 </html>
