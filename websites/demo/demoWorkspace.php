@@ -45,7 +45,7 @@
         Demo Workspace
     </h1>
     <h2>
-        Today's Laracasts Lesson: Functions and Filters
+        Today's Laracasts Lesson: Lambda Functions
     </h2>
 
     <p>
@@ -96,22 +96,24 @@
             ]
         ];
 
-    function filterByAuthor($books, $author)
-    {
+    $filterByAuthor = function ($books, $author) {
         $filteredBooks = [];
+
         foreach ($books as $book) {
-            if ($book['author'] === $author){
+            if ($book['author'] === $author) {
                 $filteredBooks[] = $book;
             }
         }
 
         return $filteredBooks;
-    }
+    };
+
+    $filteredBooks = $filterByAuthor($books, 'Philip K. Dick');
 
     ?>
 
     <ul>
-        <?php foreach (filterByAuthor($books, "Philip K. Dick") as $book) : ?>
+        <?php foreach ($filteredBooks as $book) : ?>
                 <li>
                     <a href=" <?= $book ['purchaseUrl']; ?>">
                     <?= $book["name"]; ?> (<?= $book["releaseYear"]; ?>) by <?= $book["author"]; ?>
