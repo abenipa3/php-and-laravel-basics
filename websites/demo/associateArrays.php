@@ -71,6 +71,12 @@
     echo "<center><img src='https://i.pinimg.com/736x/b2/39/17/b239173feb16bb689c990914d628fbde.jpg'></center>";
     ?>
 
+    <p>
+        <?php
+        echo "Assignment (Completed): Extend the book list from this episode's example to also include and display the release year immediately after the book's title."
+        ?>
+    </p>
+
     <!--Return Home-->
 
     <a href="http://localhost:8888" style="text-decoration: none">← back</a>

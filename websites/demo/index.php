@@ -89,6 +89,10 @@
             [
                 "name" => "Functions and Filters",
                 "assignmentUrl" => "http://localhost:8888/functionsAndFilters.php"
+            ],
+            [
+                "name" => "Lambda Functions",
+                "assignmentUrl" => "http://localhost:8888/lambdaFn.php"
             ]
         ];
     ?>

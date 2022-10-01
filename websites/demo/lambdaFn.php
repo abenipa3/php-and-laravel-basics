@@ -110,7 +110,7 @@
     };
 
     $filteredBooks = array_filter($books, function ($book) {
-        return $book['author'] === "Andy Weir";
+        return $book['releaseYear'] >= 1950 && $book['releaseYear'] <= 2020;
     });
 
     ?>
@@ -124,6 +124,12 @@
             </li>
     <?php endforeach; ?>
     </ul>
+
+    <p>
+        <?php
+        echo "Assignment (Completed): Update your book filtering logic from this episode to only display books that were first published between the years 1950 and 2020. Hint - the PHP equivalent of \"and\" is &&."
+        ?>
+    </p>
 
     <!--Return Home-->
 
