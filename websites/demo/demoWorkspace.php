@@ -96,19 +96,22 @@
             ]
         ];
 
-    $filterByAuthor = function ($books, $author) {
-        $filteredBooks = [];
+    function filter($items, $fn)
+    {
+        $filteredItems = [];
 
-        foreach ($books as $book) {
-            if ($book['author'] === $author) {
-                $filteredBooks[] = $book;
+        foreach ($items as $item) {
+            if ($fn($item)) {
+                $filteredItems[] = $item;
             }
         }
 
-        return $filteredBooks;
+        return $filteredItems;
     };
 
-    $filteredBooks = $filterByAuthor($books, 'Philip K. Dick');
+    $filteredBooks = filter($books, function ($book) {
+        return $book['releaseYear'] <= 2000;
+    });
 
     ?>
 
