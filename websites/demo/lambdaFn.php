@@ -125,6 +125,10 @@
     <?php endforeach; ?>
     </ul>
 
+    <?php
+    echo "<center><img src='https://i.kym-cdn.com/photos/images/newsfeed/000/155/144/6ca67b8f-37dd-40ef-9feb-02bed851c09a.jpg?1311850236'></center>";
+    ?>
+
     <p>
         <?php
         echo "Assignment (Completed): Update your book filtering logic from this episode to only display books that were first published between the years 1950 and 2020. Hint - the PHP equivalent of \"and\" is &&."
