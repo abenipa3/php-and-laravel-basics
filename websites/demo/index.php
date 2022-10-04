@@ -43,7 +43,7 @@
 <body>
 
 <h1>New Lesson?</h1>
-<h2>Navigate to the <a href="http://localhost:8888/demoWorkspace.php">Workspace</a>.</h2>
+<h2>Navigate to the <a href="http://localhost:8888/workspace.php">Workspace</a>.</h2>
 
     <!--Navigation-->
 
@@ -64,35 +64,35 @@
             ],
             [
                 "name" => "First PHP Tag",
-                "assignmentUrl" => "http://localhost:8888/firstPhpTag.php"
+                "assignmentUrl" => "http://localhost:8888/done/firstPhpTag.php"
             ],
             [
                 "name" => "Variables",
-                "assignmentUrl" => "http://localhost:8888/variables.php"
+                "assignmentUrl" => "http://localhost:8888/done/variables.php"
             ],
             [
                 "name" => "Conditions and Booleans",
-                "assignmentUrl" => "http://localhost:8888/conditionsAndBooleans.php"
+                "assignmentUrl" => "http://localhost:8888/done/conditionsAndBooleans.php"
             ],
             [
                 "name" => "Hello World",
-                "assignmentUrl" => "http://localhost:8888/helloWorld.php"
+                "assignmentUrl" => "http://localhost:8888/done/helloWorld.php"
             ],
             [
                 "name" => "Arrays",
-                "assignmentUrl" => "http://localhost:8888/arrays.php"
+                "assignmentUrl" => "http://localhost:8888/done/arrays.php"
             ],
             [
                 "name" => "Associate Arrays",
-                "assignmentUrl" => "http://localhost:8888/associateArrays.php"
+                "assignmentUrl" => "http://localhost:8888/done/associateArrays.php"
             ],
             [
                 "name" => "Functions and Filters",
-                "assignmentUrl" => "http://localhost:8888/functionsAndFilters.php"
+                "assignmentUrl" => "http://localhost:8888/done/functionsAndFilters.php"
             ],
             [
                 "name" => "Lambda Functions",
-                "assignmentUrl" => "http://localhost:8888/lambdaFn.php"
+                "assignmentUrl" => "http://localhost:8888/done/lambdaFn.php"
             ]
         ];
     ?>
