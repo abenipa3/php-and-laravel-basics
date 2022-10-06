@@ -93,6 +93,10 @@
             [
                 "name" => "Lambda Functions",
                 "assignmentUrl" => "http://localhost:8888/done/lambdaFn.php"
+            ],
+            [
+                "name" => "Technical Check-In 1",
+                "assignmentUrl" => "http://localhost:8888/done/check-ins/technical-check-in-1.php"
             ]
         ];
     ?>
