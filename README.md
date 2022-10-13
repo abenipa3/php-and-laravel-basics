@@ -1,6 +1,6 @@
 # Laracasts Lessons
 
-This repository is a collection of assignments completed as I am currently learning PHP with these Laracasts series:
+A collection of assignments completed as I am currently learning PHP with these Laracasts series:
 - [PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
   -  `websites/demo`
   -  `websites/dynamicWebApp`
