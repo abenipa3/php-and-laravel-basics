@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="stylesheet" href="/app.css">
-    <script src="/app.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <article>
+    <h1><a href="/posts/my-first-post">My First Post</a></h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quaerat eveniet, molestias non quae quisquam! Accusantium, eius voluptates provident aperiam architecto totam a necessitatibus eveniet, ut, placeat officia. Facere, quos.
+        </p>
+
+    </article>
+
+    <article>
+    <h1><a href="/posts/my-second-post">My Second Post</a></h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quaerat eveniet, molestias non quae quisquam! Accusantium, eius voluptates provident aperiam architecto totam a necessitatibus eveniet, ut, placeat officia. Facere, quos.
+        </p>
+
+    </article>
+
+    <article>
+        <h1><a href="/posts/my-third-post">My Third Post</a></h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quaerat eveniet, molestias non quae quisquam! Accusantium, eius voluptates provident aperiam architecto totam a necessitatibus eveniet, ut, placeat officia. Facere, quos.
+        </p>
+
+    </article>
+
 </body>
 </html>
