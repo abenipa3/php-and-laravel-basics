@@ -8,4 +8,4 @@ A collection of assignments completed as I am currently learning PHP with these 
   - `blog_prereq`
     - [HTML & CSS](https://laracasts.com/series/html-and-css-workshop) (Prereq for Laravel 8 from Scratch)
   -  `blog`
-     - All Laravel 8 assigments/walkthroughs.
+     - All Laravel 8 from Scratch assigments/walkthroughs.
