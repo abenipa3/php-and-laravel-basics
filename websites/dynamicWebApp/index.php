@@ -1,11 +1,16 @@
 <?php
 
-//Superglobals are variables that are accessible from any script or file.
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
+$heading = "Home";
 
-//die(); kills everything after it.
-die();
+function dd($value) {
+    echo "<pre>";
+    var_dump($value);
+    echo "</pre>";
+    
+    
+    die();
+}
+
+dd($_SERVER);
 
 require "views/index.view.php";
