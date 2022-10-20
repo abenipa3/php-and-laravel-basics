@@ -2,7 +2,7 @@
 
 A collection of assignments completed and WIP.
 
-I am currently learning PHP with these Laracasts series:
+Currently learning PHP with these Laracasts series:
 - [PHP for Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
   -  `websites/demo`
   -  `websites/dynamicWebApp` (In Progress)
