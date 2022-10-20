@@ -11,6 +11,6 @@ function dd($value) {
     die();
 }
 
-dd($_SERVER);
+echo $_SERVER['REQUEST_URI'];
 
 require "views/index.view.php";
