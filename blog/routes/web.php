@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $post = Post::all();
 
-    ddd($posts[0]->getPathname());
+    ddd($posts[0]->getContents());
 
     return view('posts', [
         'posts' => $posts
