@@ -26,9 +26,9 @@ Route::get('posts/{post}', function ($slug){
         // abort(404);
     }
 
-    $post = cache()->remember("posts.{$slug}", now()->addMinutes(20), function() use ($path)
+    //PHP STORM - function() can be cleaned up with fn()
+    $post = cache()->remember("posts.{$slug}", 1200, function() use ($path)
     {
-        var_dump('file_get_content');
         return $post = file_get_contents($path);
     });
 
