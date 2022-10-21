@@ -11,9 +11,7 @@ class Post {
     {
         $files = File::files(resource_path("posts/"));
 
-        return array_map(function ($file){
-            return $file->getContents();
-        }, $files);
+        return array_map(fn($file) => $file->getContents(), $files);
 
     }
 
