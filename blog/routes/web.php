@@ -26,7 +26,7 @@ Route::get('/', function () {
         $document[] = YamlFrontMatter::parseFile($file);
     }
 
-    ddd($documents);
+    return view('posts', ['posts' => $post]);
     // return view('posts', [
     //     'posts' => Post::all()
     // ]);
