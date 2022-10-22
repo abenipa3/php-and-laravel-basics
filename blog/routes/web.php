@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    YamlFrontMatter::parseFile(
+    $document = YamlFrontMatter::parseFile(
         resource_path('posts/my-fourth-post.html')
     );
 
