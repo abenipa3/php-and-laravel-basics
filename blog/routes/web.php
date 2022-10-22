@@ -2,10 +2,9 @@
 namespace App\Models;
 
 use App\Models\Post;
-use App\Models\File;
-use App\Models\Files;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
-
+use Spatie\YamlFrontMatter\YamlFrontMatter;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,17 +18,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $files = File::files(resource_path("posts"));
+    $posts = [];
 
-    $document = [];
+    // $posts = array_map(function ($file) {
+    //     $document = YamlFrontMatter::parseFile($file);
+    //     return new Post(
+    //         $document->title,
+    //         $document->excerpt,
+    //         $document->date,
+    //         $document->body(),
+    //         $document->slug,
+    //     );
+    // }, $files);
 
     foreach ($files as $file) {
-        $document[] = YamlFrontMatter::parseFile($file);
-    }
+        $document = YamlFrontMatter::parseFile($file);
 
-    return view('posts', ['posts' => $post]);
-    // return view('posts', [
-    //     'posts' => Post::all()
-    // ]);
+        // To add meta-data, add the front matter.
+        $posts[] = new Post(
+            $document->title,
+            $document->excerpt,
+            $document->date,
+            $document->body(),
+            $document->slug,
+
+        );
+    }
+    return view('posts', [
+        'posts' => $posts
+    ]);
 });
 
 Route::get('posts/{post}', function ($slug){
