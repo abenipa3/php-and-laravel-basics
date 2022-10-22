@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('posts', [
-        'posts' => Post::all()
-    ]);
+    YamlFrontMatter::parseFile(
+        resource_path('posts/my-fourth-post.html')
+    );
+
+    ddd($document->date);
+    // return view('posts', [
+    //     'posts' => Post::all()
+    // ]);
 });
 
 Route::get('posts/{post}', function ($slug){
