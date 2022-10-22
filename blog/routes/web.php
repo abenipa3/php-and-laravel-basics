@@ -2,6 +2,8 @@
 namespace App\Models;
 
 use App\Models\Post;
+use App\Models\File;
+use App\Models\Files;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,11 +18,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $document = YamlFrontMatter::parseFile(
-        resource_path('posts/my-fourth-post.html')
-    );
+    $files = File::files(resource_path("posts"));
 
-    ddd($document->date);
+    $document = [];
+
+    foreach ($files as $file) {
+        $document[] = YamlFrontMatter::parseFile($file);
+    }
+
+    ddd($documents);
     // return view('posts', [
     //     'posts' => Post::all()
     // ]);
