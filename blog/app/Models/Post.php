@@ -46,9 +46,6 @@ class Post {
     {
         //of all the blog posts, find the one with a slug that matches the one that was requested.
 
-        $posts = static::all();
-
-        dd($posts->firstWhere('slug', $slug));
-
+        return static::all()->firstWhere('slug', $slug);
     }
 }
