@@ -11,13 +11,18 @@ $routes = [
     '/mission' => 'controllers/mission.php',
 ];
 
+// Set 404 to default
+function abort($code = 404) {
+    http_response_code($code);
+
+    require "views/{$code}.php";
+
+    die();
+}
+
 // If the array has a key with the given name, it exists
 if (array_key_exists($uri, $routes)) {
     require $routes[$uri];
 } else {
-    http_response_code(404);
-
-    require 'views/404.php';
-
-    die();
+    abort();
 }
