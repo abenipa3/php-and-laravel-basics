@@ -7,9 +7,6 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="/app.css">
 </head>
-<header>
-    @yield('banner')
-</header>
 <body>
     {{-- yield means any content from the views, it will be yielded (or slotted) between the body tags. --}}
     @yield('content')

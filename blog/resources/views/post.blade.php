@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="/app.css">
-</head>
-<body>
-    <article>
+@extends('layout')
 
-        <h1>
-            {{ $post->title }}
-        </h1>
+@section('content')
+<article>
 
-        <div>
-            <!--- Control the HTML. -->
-            {!! $post->body !!}
-        </div>
+    <h1>
+        {{ $post->title }}
+    </h1>
 
-    </article>
+    <div>
+        <!--- Control the HTML. -->
+        {!! $post->body !!}
+    </div>
 
-    <a href="/">Go Back</a>
+</article>
 
-</body>
-</html>
+<a href="/">Go Back</a>
+@endsection
