@@ -11,15 +11,12 @@
     <article>
 
         <h1>
-
-            <?= $post->title; ?>
-
+            {{ $post->title }}
         </h1>
 
         <div>
-
-            <?= $post->body; ?>
-
+            <!--- Control the HTML. -->
+            {!! $post->body !!}
         </div>
 
     </article>
