@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-    {{-- yield means any content from the views, it will be yielded (or slotted) between the body tags. --}}
-    @yield('content')
+    {{ $content }}
 </body>
 </html>
