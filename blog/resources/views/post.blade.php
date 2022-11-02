@@ -1,18 +1,16 @@
 @extends('layout')
 
 @section('content')
-<article>
+    <article>
+        <h1>
+            {{ $post->title }}
+        </h1>
 
-    <h1>
-        {{ $post->title }}
-    </h1>
+        <div>
+            {!! $post->body !!}
+        </div>
+    </article>
 
-    <div>
-        <!--- Control the HTML. -->
-        {!! $post->body !!}
-    </div>
+    <a href="/">Go Back</a>
 
-</article>
-
-<a href="/">Go Back</a>
 @endsection
