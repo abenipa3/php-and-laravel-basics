@@ -9,5 +9,5 @@ Currently learning PHP with these Laracasts series:
 - [Laravel 8 from Scratch](https://laracasts.com/series/laravel-8-from-scratch)
   - `blog_prereq` (Completed)
     - [HTML & CSS](https://laracasts.com/series/html-and-css-workshop) (Prereq for Laravel 8 from Scratch)
-  -  `blog` (In Progress)
+  -  `blog` (Repo not up-to-date. Course Completed.)
      - All Laravel 8 from Scratch assigments/walkthroughs.
