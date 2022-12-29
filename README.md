@@ -1,4 +1,4 @@
-# Laracasts Lessons
+# Laracasts Lessons: PHP and Laravel Focused.
 
 A collection of assignments completed and WIP.
 
